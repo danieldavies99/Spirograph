@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Spirograph</title>
+    <meta name="description" content="Live typing test!" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.3.3/pixi.min.js"
+      integrity="sha512-J7UHpLx39bpqtP+aWP6yIuXroFk0XPkDQaS9zDthM4TVeaXstWYh556gxsXwwIwpAPSoKqVHW+eqz3B93SpyKg=="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <canvas
+      id="root"
+      class="m-auto"
+      style="max-width: 100%; max-height: 100%"
+    ></canvas>
+    <script src="js/globals.js"></script>
+    <script src="js/classes/InputHandler.js"></script>
+    <script src="js/classes/CogPathTracker.js"></script>
+    <script src="js/classes/Brush.js"></script>
+    <script src="js/classes/Shape.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+
+  <style>
+    body {
+      background-color: #000000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #root {
+    }
+  </style>
+</html>
