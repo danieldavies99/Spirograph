@@ -1,7 +1,10 @@
 const WIDTH = 1920;
 const HEIGHT = 1080;
-const BACKGROUNDCOLOR = 0x9EB3C2;
+const BACKGROUNDCOLOR = 0xffffff;
 const TEMPLATECOLOR = 0x000000;
+const SHOWSHAPES = true;
+let mouseX = null;
+let mouseY = null;
 
 const KEYNAMES = [
   "1",
@@ -47,4 +50,6 @@ const KEYNAMES = [
   ",",
   ".",
   " ",
+  "=",
+  "-"
 ];

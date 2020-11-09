@@ -7,13 +7,16 @@ let CreateShape = function() {
       this.points = shapeCoords.points;
       this.holes = shapeCoords.holes;
 
-      //this.scaleShape(0.9957387);
+      //this.scaleShape(2.00964 );
       let translation = [ initialPos[0] - this.points[0][0], initialPos[1] - this.points[0][1] ]; 
       this.translate(translation);
       this.logPoints();
-      app.stage.addChild(this.shape);
+      pageContainer.addChild(this.shape);
     },
     drawShape: function () {
+      if (!SHOWSHAPES) {
+        return false;
+      }
       this.shape.clear();
       this.shape.beginFill(TEMPLATECOLOR,0.3);
       this.shape.moveTo(this.points[0][0], this.points[0][1]);
@@ -29,8 +32,7 @@ let CreateShape = function() {
       for (let i = 0; i < this.holes.length; i++) {
         this.shape.drawCircle( this.holes[i][0], this.holes[i][1], 5);
       }
-
-
+      return true;
     }, 
     rotatePoint: function (point, origin, amount) { 
       let result = [];

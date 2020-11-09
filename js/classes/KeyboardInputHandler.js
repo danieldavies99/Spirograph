@@ -1,4 +1,4 @@
-let CreateInputHandler = function () {
+let CreateKeyboardInputHandler = function () {
   return {
     init: function (keyDown, keyUp) {
       for (let i = 0; i < KEYNAMES.length; i++) {
